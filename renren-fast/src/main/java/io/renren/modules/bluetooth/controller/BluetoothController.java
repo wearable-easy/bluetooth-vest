@@ -48,7 +48,7 @@ public class BluetoothController {
     }
 
     @GetMapping("/realtime/{deviceId}")
-    @ApiOperation(value = "保存蓝牙记录", notes = "保存蓝牙记录")
+    @ApiOperation(value = "查询蓝牙实时记录", notes = "查询蓝牙实时记录")
     public R<BluetoothRealtimeVO> realtime(@PathVariable("deviceId") String deviceId, @RequestParam("type") String type) {
         BluetoothRealtimeVO bluetoothRealtimeVO = bluetoothService.getRealtimeByDeviceId(deviceId, type);
         return R.ok(bluetoothRealtimeVO);

@@ -57,7 +57,7 @@ public class BluetoothService {
         String key = BLU_PREFIX.concat(deviceId).concat("_").concat(type);
         String result = redisTemplate.opsForValue().get(key);
         if (result == null) {
-            throw new RRException("沒查到");
+            throw new RRException("No Data");
         }
         BluetoothDO bluetoothDO = GSON.fromJson(result, BluetoothDO.class);
         BluetoothRealtimeVO bluetoothRealtimeVO = new BluetoothRealtimeVO();
