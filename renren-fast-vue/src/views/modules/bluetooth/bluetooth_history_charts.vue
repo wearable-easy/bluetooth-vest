@@ -6,21 +6,21 @@
           <el-date-picker
             v-model="dataForm.startTime"
             type="datetime"
-            placeholder="开始时间">
+            placeholder="Start DateTime">
           </el-date-picker>
         </el-form-item>
         <el-form-item>
           <el-date-picker
             v-model="dataForm.endTime"
             type="datetime"
-            placeholder="结束时间">
+            placeholder="End DateTime">
           </el-date-picker>
         </el-form-item>
         <el-form-item>
-          <el-input v-model="dataForm.deviceName" placeholder="设备名称" clearable></el-input>
+          <el-input v-model="dataForm.deviceName" placeholder="Device Name" clearable></el-input>
         </el-form-item>
         <el-form-item>
-          <el-select v-model="dataForm.type" placeholder="参数类型">
+          <el-select v-model="dataForm.type" placeholder="Parameter type">
             <el-option
               v-for="item in options"
               :key="item.value"
@@ -30,7 +30,7 @@
           </el-select>
         </el-form-item>
         <el-form-item>
-          <el-button @click="getDataList()">查询</el-button>
+          <el-button @click="getDataList()">Search</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -152,7 +152,7 @@
       initBluetoothRealtime () {
         var option = {
           title: {
-            text: '蓝牙历史数据'
+            text: 'Historical Curve'
           },
           tooltip: {
             trigger: 'axis',

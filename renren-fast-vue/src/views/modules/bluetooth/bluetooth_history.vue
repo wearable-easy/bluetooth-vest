@@ -5,21 +5,21 @@
         <el-date-picker
           v-model="dataForm.startTime"
           type="datetime"
-          placeholder="开始时间">
+          placeholder="Start DateTime">
         </el-date-picker>
       </el-form-item>
       <el-form-item>
         <el-date-picker
           v-model="dataForm.endTime"
           type="datetime"
-          placeholder="结束时间">
+          placeholder="Endt DateTime">
         </el-date-picker>
       </el-form-item>
       <el-form-item>
-        <el-input v-model="dataForm.deviceName" placeholder="设备名称" clearable></el-input>
+        <el-input v-model="dataForm.deviceName" placeholder="Device Name" clearable></el-input>
       </el-form-item>
       <el-form-item>
-        <el-select v-model="dataForm.type" placeholder="参数类型">
+        <el-select v-model="dataForm.type" placeholder="Parameter Type">
           <el-option
             v-for="item in options"
             :key="item.value"
@@ -29,7 +29,7 @@
         </el-select>
       </el-form-item>
       <el-form-item>
-        <el-button @click="getDataList()">查询</el-button>
+        <el-button @click="getDataList()">Search</el-button>
       </el-form-item>
     </el-form>
     <el-table
@@ -43,7 +43,7 @@
         header-align="center"
         align="center"
         width="150"
-        label="时间">
+        label="Date Time">
       </el-table-column>
       <!--<el-table-column-->
         <!--header-align="center"-->
@@ -58,19 +58,19 @@
         prop="deviceName"
         header-align="center"
         align="center"
-        label="设备名">
+        label="Device Name">
       </el-table-column>
       <el-table-column
         prop="type"
         header-align="center"
         align="center"
-        label="参数类型">
+        label="Parameter Type">
       </el-table-column>
       <el-table-column
         prop="value"
         header-align="center"
         align="center"
-        label="上报值">
+        label="Record Value">
       </el-table-column>
     </el-table>
     <el-pagination

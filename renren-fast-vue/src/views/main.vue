@@ -3,7 +3,7 @@
     class="site-wrapper"
     :class="{ 'site-sidebar--fold': sidebarFold }"
     v-loading.fullscreen.lock="loading"
-    element-loading-text="拼命加载中">
+    element-loading-text="Loading...">
     <template v-if="!loading">
       <main-navbar />
       <main-sidebar />

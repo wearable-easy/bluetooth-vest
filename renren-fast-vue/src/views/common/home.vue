@@ -1,6 +1,37 @@
 <template>
-  <div class="mod-home">
-    <h3>项目介绍</h3>
+    <div class="mod-home">
+      <h2>System Introduction</h2>
+      <div class="sixteen columns measures vertical-home-module-spacing">
+        <p class="vertical-trippel-spacing">The system can measure some of your Health Status, including</p>
+        <div class="columns five alpha measures__item ">
+          <h3>Heart Rate<span class="icon-HeartRate"></span>
+          </h3>
+          <p>Monitor your&nbsp;heartbeats and view your ECG in real-time&nbsp;with great precision.</p>
+        </div>
+        <div class="columns five measures__item">
+          <h3>Heart Rate Variability<span class=" icon-HRV"></span>
+          </h3>
+          <p>HRV is an essential tool to measure stress, load &amp; training fatigue to&nbsp;prevent overtraining or injuries.</p>
+        </div>
+        <div class="columns five omega measures__item">
+          <h3>Breathing Rate<span class=" icon-Lungs"></span>
+          </h3>
+          <p>Learn to control your breathing, increase your performance and reduce stress.</p>
+        </div>
+
+        <div class="columns five alpha measures__item">
+          <h3>Breathing Volume<span class=" icon-Lungs-Volume"></span>
+          </h3>
+          <p>Learn what your lung capacity is for each of your activities. </p>
+        </div>
+        <div class="columns five measures__item">
+          <h3>Activity<span class=" icon-Activity"></span> <span class="measures__item__sub">(steps, cadence &amp; calories)</span>
+          </h3>
+          <p>Your intensity level, steps, and pace are recorded.</p>
+        </div>
+
+        <br class="clear"> <br class="clear"> <!--<a href="" class="action_button action_button--small">Watch real data in action</a>-->
+      </div>
 <!--    <ul>-->
 <!--      <li>renren-fast-vue基于vue、element-ui构建开发，实现<a href="https://gitee.com/renrenio/renren-fast" target="_blank">renren-fast</a>后台管理前端功能，提供一套更优的前端解决方案</li>-->
 <!--      <li>前后端分离，通过token进行数据交互，可独立部署</li>-->

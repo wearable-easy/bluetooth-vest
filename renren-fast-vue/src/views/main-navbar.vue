@@ -2,8 +2,8 @@
   <nav class="site-navbar" :class="'site-navbar--' + navbarLayoutType">
     <div class="site-navbar__header">
       <h1 class="site-navbar__brand" @click="$router.push({ name: 'home' })">
-        <a class="site-navbar__brand-lg" href="javascript:;">可穿戴监控测试平台</a>
-        <a class="site-navbar__brand-mini" href="javascript:;">UISE</a>
+        <a class="site-navbar__brand-lg" href="javascript:;">MONITOR & ANALYSIS</a>
+        <a class="site-navbar__brand-mini" href="javascript:;">ISE</a>
       </h1>
     </div>
     <div class="site-navbar__body clearfix">
@@ -41,8 +41,8 @@
               <img src="~@/assets/img/avatar.png" :alt="userName">{{ userName }}
             </span>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item @click.native="updatePasswordHandle()">修改密码</el-dropdown-item>
-              <el-dropdown-item @click.native="logoutHandle()">退出</el-dropdown-item>
+              <el-dropdown-item @click.native="updatePasswordHandle()">Change Password</el-dropdown-item>
+              <el-dropdown-item @click.native="logoutHandle()">Logout</el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
         </el-menu-item>
@@ -91,9 +91,9 @@
       },
       // 退出
       logoutHandle () {
-        this.$confirm(`确定进行[退出]操作?`, '提示', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
+        this.$confirm(`Do you want to logout?`, 'Confirm', {
+          confirmButtonText: 'OK',
+          cancelButtonText: 'Cancel',
           type: 'warning'
         }).then(() => {
           this.$http({

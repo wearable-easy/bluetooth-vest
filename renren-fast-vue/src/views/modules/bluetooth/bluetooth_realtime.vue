@@ -4,10 +4,10 @@
     <div class="mod-log">
       <el-form :inline="true" :model="dataForm" @keyup.enter.native="setDeviceName()">
         <el-form-item>
-          <el-input v-model="dataForm.chooseDeviceName" placeholder="设备号" clearable></el-input>
+          <el-input v-model="dataForm.chooseDeviceName" placeholder="Device Serial Number" clearable></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button @click="setDeviceName()">查询</el-button>
+          <el-button @click="setDeviceName()">Search</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -124,7 +124,7 @@
       initBluetoothRealtime () {
         var option = {
           title: {
-            text: '蓝牙实时数据'
+            text: 'Real-Time Data'
           },
           tooltip: {
             trigger: 'axis',
